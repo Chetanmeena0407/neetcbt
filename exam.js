@@ -456,3 +456,4 @@ document.addEventListener("visibilitychange", () => {
     }
 
 });
+document.getElementById("submitBtn").addEventListener("click", submitExam);
