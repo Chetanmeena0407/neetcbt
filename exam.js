@@ -338,29 +338,45 @@ function submitExam() {
 
     saveCurrentAnswer();
 
-    let answered = answers.filter(a => a != null).length;
+    let answered = 0;
+    let correct = 0;
+    let wrong = 0;
+    let unanswered = 0;
 
-    let left = questions.length - answered;
+    questions.forEach((q, i) => {
 
-    if (confirm(
-        "Answered : " + answered +
-        "\nNot Answered : " + left +
-        "\n\nSubmit Test?"
-    )) {
+        if (answers[i] == null) {
+            unanswered++;
+        } else {
+            answered++;
 
-        localStorage.removeItem("neet_answers");
+            // questions.json me answer 1-4 hai,
+            // radio index 0-3 hai
+            if ((answers[i] + 1) === q.answer) {
+                correct++;
+            } else {
+                wrong++;
+            }
+        }
 
-        localStorage.removeItem("neet_review");
+    });
 
-        alert("Test Submitted Successfully");
+    let marks = (correct * 4) - wrong;
 
-        window.location = "index.html";
+    if (confirm("Submit Test?")) {
+
+        alert(
+            "RESULT\n\n" +
+            "Answered : " + answered +
+            "\nCorrect : " + correct +
+            "\nWrong : " + wrong +
+            "\nUnanswered : " + unanswered +
+            "\n\nMarks : " + marks
+        );
 
     }
 
 }
-
-document.getElementById("submitBtn").onclick = submitExam;
 
 
 // ==========================
