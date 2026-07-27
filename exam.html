@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEET CBT Exam</title>
+
+<link rel="stylesheet" href="exam.css">
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+    <div class="logo">
+
+        <img src="assets/logo.png">
+
+        <div>
+
+            <h2>NEET (UG) MOCK TEST</h2>
+
+            <small>National Testing Agency</small>
+
+        </div>
+
+    </div>
+
+    <div class="top-right">
+
+        <div class="timeBox">
+
+            <span>Remaining Time</span>
+
+            <h2 id="timer">03:00:00</h2>
+
+        </div>
+
+        <div class="candidate">
+
+            <img src="assets/user.png">
+
+            <div>
+
+                <h3>Demo Student</h3>
+
+                <small>Application No : 2500012345</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="main">
+
+<!-- LEFT PANEL -->
+
+<div class="left">
+
+<div class="examInfo">
+
+<div>
+
+<b>Exam Name :</b>
+
+NEET Full Syllabus Test
+
+</div>
+
+<div>
+
+<b>Subject :</b>
+
+Physics
+
+</div>
+
+<div>
+
+<b>Question No :</b>
+
+<span id="questionNo">1</span>
+
+</div>
+
+</div>
+
+<div class="questionBox">
+
+<img
+
+id="questionImage"
+
+src="https://via.placeholder.com/900x450?text=Question"
+
+>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="radio" name="answer">
+
+Option A
+
+</label>
+
+<label>
+
+<input type="radio" name="answer">
+
+Option B
+
+</label>
+
+<label>
+
+<input type="radio" name="answer">
+
+Option C
+
+</label>
+
+<label>
+
+<input type="radio" name="answer">
+
+Option D
+
+</label>
+
+</div>
+
+<div class="buttonRow">
+
+<button id="saveNext">
+
+SAVE & NEXT
+
+</button>
+
+<button id="clear">
+
+CLEAR
+
+</button>
+
+<button id="saveReview">
+
+SAVE & MARK FOR REVIEW
+
+</button>
+
+<button id="reviewNext">
+
+MARK FOR REVIEW & NEXT
+
+</button>
+
+</div>
+
+<div class="bottomNav">
+
+<button id="backBtn">
+
+<< BACK
+
+</button>
+
+<button id="nextBtn">
+
+NEXT >>
+
+</button>
+
+<button id="submitBtn">
+
+SUBMIT
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= RIGHT PANEL ================= -->
+
+<div class="right">
+
+    <div class="profile">
+
+        <img src="assets/user.png">
+
+        <div>
+
+            <h3>Demo Student</h3>
+
+            <p>Candidate</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="legend">
+
+        <h3>Legend</h3>
+
+        <div class="legendItem">
+
+            <span class="notVisited"></span>
+
+            You have not visited the question yet
+
+        </div>
+
+        <div class="legendItem">
+
+            <span class="notAnswered"></span>
+
+            You have not answered the question
+
+        </div>
+
+        <div class="legendItem">
+
+            <span class="answered"></span>
+
+            You have answered the question
+
+        </div>
+
+        <div class="legendItem">
+
+            <span class="review"></span>
+
+            Marked for review
+
+        </div>
+
+        <div class="legendItem">
+
+            <span class="reviewAnswered"></span>
+
+            Answered & Marked for review
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3 class="paletteTitle">
+
+        Question Palette
+
+    </h3>
+
+    <div id="paletteGrid">
+
+        <!-- JS se buttons banenge -->
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="exam.js"></script>
+
+</body>
+
+</html>

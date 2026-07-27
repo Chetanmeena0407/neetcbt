@@ -1,0 +1,617 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+    background:#efefef;
+    overflow:hidden;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.topbar{
+
+    height:72px;
+
+    background:#0b4ea2;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    color:#fff;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:52px;
+
+    height:52px;
+
+}
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+.logo small{
+
+    font-size:13px;
+
+}
+
+.top-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.timeBox{
+
+    text-align:center;
+
+}
+
+.timeBox span{
+
+    font-size:13px;
+
+}
+
+.timeBox h2{
+
+    margin-top:4px;
+
+    font-size:26px;
+
+}
+
+.candidate{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.candidate img{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    border:2px solid white;
+
+}
+
+.candidate h3{
+
+    font-size:17px;
+
+}
+
+/* ===================================
+   MAIN
+=================================== */
+
+.main{
+
+    display:grid;
+
+    grid-template-columns:74% 26%;
+
+    height:calc(100vh - 72px);
+
+}
+
+/* ===================================
+   LEFT
+=================================== */
+
+.left{
+
+    background:#fff;
+
+    padding:18px;
+
+    overflow:auto;
+
+}
+
+.examInfo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:#f5f8fd;
+
+    border:1px solid #d8e5f8;
+
+    padding:12px;
+
+    margin-bottom:18px;
+
+    border-radius:5px;
+
+}
+
+.questionBox{
+
+    width:100%;
+
+    min-height:430px;
+
+    border:1px solid #d9d9d9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+}
+
+.questionBox img{
+
+    max-width:100%;
+
+    max-height:420px;
+
+}
+
+.options{
+
+    margin-top:22px;
+
+}
+
+.options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    border:1px solid #ddd;
+
+    margin-bottom:12px;
+
+    padding:13px;
+
+    cursor:pointer;
+
+    border-radius:4px;
+
+    transition:.25s;
+
+}
+
+.options label:hover{
+
+    border-color:#0b4ea2;
+
+    background:#eef5ff;
+
+}
+
+.options input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* ===================================
+   BUTTON SECTION
+=================================== */
+
+.buttonRow{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:25px;
+
+}
+
+.buttonRow button{
+
+    height:34px;
+
+    border:none;
+
+    color:white;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    border-radius:3px;
+
+    transition:.25s;
+
+}
+
+#saveNext{
+
+    width:120px;
+
+    background:#63c253;
+
+}
+
+#clear{
+
+    width:80px;
+
+    background:white;
+
+    color:#333;
+
+    border:1px solid #cfcfcf;
+
+}
+
+#saveReview{
+
+    width:190px;
+
+    background:#f2b233;
+
+}
+
+#reviewNext{
+
+    width:210px;
+
+    background:#3c79b7;
+
+}
+
+.buttonRow button:hover{
+
+    opacity:.9;
+
+}
+
+/* Bottom Navigation */
+
+.bottomNav{
+
+    margin-top:18px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.bottomNav button{
+
+    height:34px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:3px;
+
+    font-weight:bold;
+
+}
+
+#backBtn{
+
+    width:90px;
+
+    background:#efefef;
+
+    border:1px solid #cfcfcf;
+
+}
+
+#nextBtn{
+
+    width:90px;
+
+    margin-left:8px;
+
+    background:#efefef;
+
+    border:1px solid #cfcfcf;
+
+}
+
+#submitBtn{
+
+    margin-left:auto;
+
+    width:95px;
+
+    background:#63c253;
+
+    color:white;
+
+}
+
+/* ===================================
+   RIGHT PANEL
+=================================== */
+
+.right{
+
+    background:#f8f8f8;
+
+    border-left:1px solid #d8d8d8;
+
+    padding:15px;
+
+    overflow-y:auto;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+}
+
+.profile img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:2px solid #0b4ea2;
+
+}
+
+.profile h3{
+
+    font-size:17px;
+
+}
+
+.profile p{
+
+    font-size:13px;
+
+    color:#555;
+
+}
+
+/* ===================================
+   LEGEND
+=================================== */
+
+.legend{
+
+    margin:15px 0;
+
+}
+
+.legend h3{
+
+    color:#0b4ea2;
+
+    margin-bottom:10px;
+
+}
+
+.legendItem{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+    font-size:13px;
+
+}
+
+.legendItem span{
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+}
+
+.notVisited{
+
+    background:#d9d9d9;
+
+}
+
+.notAnswered{
+
+    background:#dc3545;
+
+}
+
+.answered{
+
+    background:#198754;
+
+}
+
+.review{
+
+    background:#7b3fe4;
+
+}
+
+.reviewAnswered{
+
+    background:#0b4ea2;
+
+}
+
+/* ===================================
+   QUESTION PALETTE
+=================================== */
+
+.paletteTitle{
+
+    margin:15px 0;
+
+    color:#0b4ea2;
+
+}
+
+#paletteGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+}
+
+#paletteGrid button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d9d9d9;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+#paletteGrid button:hover{
+
+    background:#0b4ea2;
+
+    color:white;
+
+}
+
+#paletteGrid button.current{
+
+    border:3px solid #000;
+
+}
+
+#paletteGrid button.answered{
+
+    background:#198754;
+
+    color:white;
+
+}
+
+#paletteGrid button.review{
+
+    background:#7b3fe4;
+
+    color:white;
+
+}
+
+#paletteGrid button.notAnswered{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:1000px){
+
+.main{
+
+    grid-template-columns:1fr;
+
+}
+
+.right{
+
+    border-left:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+.buttonRow{
+
+    flex-wrap:wrap;
+
+}
+
+.buttonRow button{
+
+    flex:1;
+
+}
+
+}

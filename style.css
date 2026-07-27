@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+/*================ HEADER ================*/
+
+.topHeader{
+
+    height:70px;
+
+    background:#0B4EA2;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
+
+}
+
+.logoArea h2{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.language{
+
+    text-align:right;
+
+}
+
+.language label{
+
+    display:block;
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+.language select{
+
+    width:180px;
+
+    padding:8px;
+
+    border-radius:4px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+/*================ MAIN ================*/
+
+.container{
+
+    width:95%;
+
+    max-width:1250px;
+
+    margin:20px auto;
+
+}
+
+/*================ BOX ================*/
+
+.instructionBox{
+
+    background:white;
+
+    border-radius:8px;
+
+    padding:35px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+.instructionBox h1{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#222;
+
+    font-size:32px;
+
+}
+
+.instructions{
+
+    height:520px;
+
+    overflow-y:auto;
+
+    padding-right:15px;
+
+}
+
+/* Scrollbar */
+
+.instructions::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.instructions::-webkit-scrollbar-thumb{
+
+    background:#0B4EA2;
+
+    border-radius:20px;
+
+}
+
+/*================ HEADINGS ================*/
+
+.instructions h3{
+
+    color:#0B4EA2;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    text-decoration:underline;
+
+}
+
+.instructions ol{
+
+    padding-left:25px;
+
+}
+
+.instructions li{
+
+    margin-bottom:10px;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/*================ LEGEND ================*/
+
+.legend{
+
+    margin-top:25px;
+
+}
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+}
+
+.box{
+
+    width:22px;
+
+    height:22px;
+
+    margin-right:12px;
+
+    border-radius:3px;
+
+}
+
+.grey{
+
+    background:#d9d9d9;
+
+}
+
+.red{
+
+    background:#ff5a5a;
+
+}
+
+.green{
+
+    background:#2dbd4f;
+
+}
+
+.purple{
+
+    background:#7b3fe4;
+
+}
+
+/*================ CHECKBOX ================*/
+
+.agree{
+
+    margin-top:25px;
+
+    font-size:17px;
+
+}
+
+.agree input{
+
+    transform:scale(1.3);
+
+    margin-right:10px;
+
+}
+
+/*================ BUTTON ================*/
+
+.buttonArea{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+#proceedBtn{
+
+    background:#34A853;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 70px;
+
+    font-size:20px;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#proceedBtn:hover{
+
+    background:#2b9147;
+
+}
+
+/*================ MOBILE ================*/
+
+@media(max-width:900px){
+
+.topHeader{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+    gap:15px;
+
+}
+
+.instructionBox{
+
+    padding:20px;
+
+}
+
+.instructions{
+
+    height:420px;
+
+}
+
+.instructionBox h1{
+
+    font-size:24px;
+
+}
+
+}
